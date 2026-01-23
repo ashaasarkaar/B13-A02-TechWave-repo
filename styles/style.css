@@ -1,37 +1,41 @@
-
-.inter-font{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
-body{
+
+body {
     box-sizing: border-box;
 }
 
 /* hearder related styles */
-header nav ul li{
+header nav ul li {
     color: white;
     font-weight: medium;
 }
-.hamburger-menu{
+
+.hamburger-menu {
     display: none;
 }
-.linear-text{
+
+.linear-text {
     background: linear-gradient(to right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1),
-    rgba(145, 0, 248, 1));
+            rgba(145, 0, 248, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* shared styles */
 /* button ar jonno */
-.btn-primary{
+.btn-primary {
     background: linear-gradient(to right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1),
-    rgba(145, 0, 248, 1));
+            rgba(145, 0, 248, 1));
     border-radius: 10000px;
 }
+
 /* main styles */
 
 /* bannar related styles */
-.bannar-section{
+.bannar-section {
     background-image: url(../assets/hero-bg.png);
     background-position: center;
     width: 100%;
@@ -43,69 +47,87 @@ header nav ul li{
     align-items: center;
     gap: 40px;
 }
-.big-circle-img{
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.small-circle-img{
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: spin 4s ease-in-out infinite;
-    transform-origin: center;
-    animation-delay: 1s;
 
+.big-circle-img {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-/* @keyframes spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-} */
+
+.small-circle-img {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* bannar text styles */
-.bannar-text-container{
+.bannar-text-container {
     margin-top: 450px;
 }
+
 .bannar-heading{
-    color: #FFFFFF;   
+    color: white;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: none;
+  animation: typing 5s steps(20) forwards infinite;
+  animation-delay: 1s;
 }
-.btn-2{
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+header h1{
+    animation: zoomFade 1.2s ease-out forwards;   
+}
+@keyframes zoomFade {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.btn-2 {
     color: #00FF88;
     border: 1px solid #00FF88;
     border-radius: 10000px;
 }
+
 /* new badge style */
-.badge-new{
+.badge-new {
     color: #1A0B2E;
     border-radius: 1000px;
     background-color: #00FF88;
-    box-shadow: 0px 3px 27px 0px rgba(0,255,136,0.5);
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
     position: absolute;
     top: 12%;
     transform: translate(84%, 55%);
-    
+
 }
+
 /*Techwave Section Related Design */
-.techwave-card{
+.techwave-card {
     border-radius: 40px;
-    background-color: rgba(53,17,101,0.4);
+    background-color: rgba(53, 17, 101, 0.4);
 }
 
 /* Featured and Host Section related design */
-.video-box iframe{
+.video-box iframe {
     width: 100%;
     height: 13.375rem;
     border: none;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
 }
-.video-card{
+
+.video-card {
     border: none;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
@@ -114,117 +136,141 @@ header nav ul li{
 }
 
 /* Footer Related Styles */
-.footer-section{
+.footer-section {
     background-image: url(../assets/footer-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
-
-
 /* Responsive Media Query Design only for small mobile device */
-@media screen and (max-width: 576px){
-    nav{
+@media screen and (max-width: 576px) {
+    nav {
         padding: 16px 20px;
     }
-    nav ul li, nav button{
+
+    nav ul li,
+    nav button {
         display: none;
     }
-    .hamburger-menu{
+
+    .hamburger-menu {
         display: block;
         margin-right: 20px;
     }
-    nav h1{
+
+    nav h1 {
         margin-left: 20px;
     }
-    .about-rating{
+
+    .about-rating {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
-    .about-section{
+
+    .about-section {
         padding: 40px 20px;
     }
-    hr{
+
+    hr {
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
     /* Techwave section responsive */
-    .techwave-section{
+    .techwave-section {
         padding: 40px 20px;
     }
-    .techwave-cards-container{
+
+    .techwave-cards-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
     }
-    .decrease-row{
+
+    .decrease-row {
         grid-row: span 1;
         grid-column: span 1;
     }
+
     /* Featured section */
-    .featured-video-cards{
+    .featured-video-cards {
         flex-direction: column;
         gap: 1rem;
     }
-    .featured-host-section{
+
+    .featured-host-section {
         padding: 2.5rem 1.2rem;
     }
-    .host-img-text-container{
+
+    .host-img-text-container {
         flex-direction: column;
         gap: 1rem;
     }
-    .host-details{
+
+    .host-details {
         text-align: center;
     }
-    .social-media-icon{
+
+    .social-media-icon {
         justify-content: center;
         align-items: center;
     }
 }
+
 /* Responsive For Medium Device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    nav{
+    nav {
         padding: 16px 30px;
     }
-    .hamburger-menu, nav ul li{
+
+    .hamburger-menu,
+    nav ul li {
         display: none;
     }
-    nav button{
+
+    nav button {
         display: block;
         margin-right: 20px;
     }
-    nav h1{
+
+    nav h1 {
         margin-left: 20px;
     }
-      .about-rating{
+
+    .about-rating {
         grid-template-columns: repeat(2, 1fr);
     }
-    .display-inline{
+
+    .display-inline {
         display: inline;
     }
 
-     /* Techwave section responsive */
-    .techwave-section{
+    /* Techwave section responsive */
+    .techwave-section {
         padding: 40px 20px;
     }
-    .techwave-cards-container{
+
+    .techwave-cards-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
     }
-    .decrease-row{
+
+    .decrease-row {
         grid-row: span 1;
         grid-column: span 1;
     }
-     /* Featured section */
-    .featured-video-cards{
+
+    /* Featured section */
+    .featured-video-cards {
         flex-direction: column;
         gap: 2rem;
     }
-       .featured-host-section{
+
+    .featured-host-section {
         padding: 5rem 6.25rem;
     }
-    .video-box iframe{
+
+    .video-box iframe {
         height: 23rem;
     }
 
