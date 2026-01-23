@@ -113,12 +113,18 @@ header nav ul li{
     border-top-right-radius: 1.5rem;
 }
 
+/* Footer Related Styles */
+.footer-section{
+    background-image: url(../assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 
 
-/* Responsive Media Query Design */
-/* only for small mobile device */
+/* Responsive Media Query Design only for small mobile device */
 @media screen and (max-width: 576px){
     nav{
         padding: 16px 20px;
