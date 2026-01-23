@@ -125,6 +125,18 @@ header nav ul li{
         margin-top: 40px;
         margin-bottom: 40px;
     }
+    /* Techwave section responsive */
+    .techwave-section{
+        padding: 40px 20px;
+    }
+    .techwave-cards-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .decrease-row{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
 }
 /* Responsive For Medium Device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -146,6 +158,19 @@ header nav ul li{
     }
     .display-inline{
         display: inline;
+    }
+
+     /* Techwave section responsive */
+    .techwave-section{
+        padding: 40px 20px;
+    }
+    .techwave-cards-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .decrease-row{
+        grid-row: span 1;
+        grid-column: span 1;
     }
 
 }
