@@ -144,7 +144,14 @@ header h1 {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.footer-media-icons{
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    width: fit-content;
+    margin: 0 auto;
+    gap: 2.5rem;
+    align-items: center;
+}
 /* animation related styles */
 /* For About the podcast section */
 .text-wave-gradient {
@@ -165,7 +172,7 @@ header h1 {
     background-size: 300%;
     -webkit-background-clip: text;
     color: transparent;
-    animation: wave 3s linear infinite;
+    animation: wave 1s linear infinite;
 }
 @keyframes wave {
   0% { background-position: 0%; }
@@ -255,6 +262,12 @@ header h1 {
     .social-media-icon {
         justify-content: center;
         align-items: center;
+    }
+    .footer-media-icons{
+        grid-template-columns: repeat(2, max-content);
+    }
+    .footer-section{
+        padding: 3.125rem 0;
     }
 }
 
